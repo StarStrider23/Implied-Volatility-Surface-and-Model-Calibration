@@ -43,7 +43,10 @@ $$ \sigma_{IV} = \sigma_{IV}(F, T) $$
 
 The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models. 
 
-Of course, one needs to be aware of the fact that a typical implied volatilty surface is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because maturities and strikes/moneyness/forward moneyness themselves are discrete. Therefore, a common practice is to connect the points by interpolation which creates a surface.
+Of course, one needs to be aware of the fact that a typical implied volatilty surface is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because maturities and strikes/moneyness/forward moneyness themselves are discrete. Therefore, a common practice is to connect the points by interpolation which creates a surface. An example can be found below.
+
+<img width="925" height="430" alt="Снимок экрана 2026-06-29 в 18 40 03" src="https://github.com/user-attachments/assets/c1b5e07d-8c6a-4e7b-85f1-aee43dc0f9ab" />
+
 
 ## Heston Model. Dynamics
 
