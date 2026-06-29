@@ -20,7 +20,7 @@ $$ C(S_t, K, T) = S_t e^{-q T} P_1 - K e^{-r T }P_2 $$
 
 where ($S_t$) denotes the underlying asset price, ($K$) the strike price, ($T$) the time to maturity, ($r$) the risk-free interest rate and ($q$) the continuous dividend yield. Finally, ($P_1$) and ($P_2$) are risk-neutral probabilities. When the underlying probability is assumed to be normal, $P_1$ and $P_2$ are nothing else but the correspodning Cumulative Distribution Fucntion (CDF). However, the Heston model assumes that the underlying follows a distribution whose closed form is unknown. To be even more precise, the closed form cannot be dervied. This is because the distribution is now much more complicated since it depends on the volatility which itself is stochastic. Luckily, despite the obstacle, the Heston probabilities $P_1$ and $P_2$ can still be recovered. This is done through the Fourier inversion:
 
-$$ P_j = \frac{1}{2} + \frac{1}{\pi} \int_0^\infty \Re \left( \frac{e^{-iu\ln K} \phi_j(u)}{iu} \right),du, \qquad j=1,2 $$
+$$ P_j = \frac{1}{2} + \frac{1}{\pi} \int_0^\infty \Re \left( \frac{e^{-iu\ln K} \phi_j(u)}{iu} \right)du \qquad j=1,2 $$
 
 where (\Re(\cdot)) denotes the real part of a complex-valued function and (\phi_j(u)) is the characteristic function of the log-asset price.
 
