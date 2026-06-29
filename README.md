@@ -22,7 +22,7 @@ where ($S_t$) denotes the underlying asset price, ($K$) the strike price, ($T$) 
 
 $$ P_j = \frac{1}{2} + \frac{1}{\pi} \int_0^\infty \Re \left( \frac{e^{-iu\ln K} \varphi_j(u)}{iu} \right)du \qquad j=1,2 $$
 
-where ($\Re(\cdot)$) denotes the real part of a complex-valued function and (\phi_j(u)) is the characteristic function of the log-asset price.
+where $\Re(...)$ denotes the real part of a complex-valued function and ($\varphi_j(u)$) is the characteristic function of the log-asset price.
 
 The characteristic function can be written as
 
