@@ -16,9 +16,9 @@ Despite incorporating stochastic volatility the Heston model remains analyticall
 
 Recall that, under the risk-neutral measure, the price of a European call option is given by
 
-$$ C(S_t, K, \tau) = S_t e^{-q \tau} P_1 - K e^{-r \tau }P_2 $$
+$$ C(S_t, K, T) = S_t e^{-q T} P_1 - K e^{-r T }P_2 $$
 
-where ($S_t$) denotes the underlying asset price, ($K$) the strike price, ($\tau$ = $T - t$) the time to maturity, ($r$) the risk-free interest rate and ($q$) the continuous dividend yield. Finally, ($P_1$) and ($P_2$) are risk-neutral probabilities. When the underlying probability is assumed to be normal, $P_1$ and $P_2$ are nothing else but the correspodning Cumulative Distribution Fucntion (CDF). However, the Heston Model assumes that the underlying follows a probability whose closed form isn't known. To be even more precise, the closed form cannot be dervied. This is because the distribution is much more complicated since it depends on the volatility which itself is stochastic. Luckily, despite the obstcle, the Heston probabilities $P_1$ and $P_2$ can still be recovered. This is done through Fourier inversion:
+where ($S_t$) denotes the underlying asset price, ($K$) the strike price, ($T$) the time to maturity, ($r$) the risk-free interest rate and ($q$) the continuous dividend yield. Finally, ($P_1$) and ($P_2$) are risk-neutral probabilities. When the underlying probability is assumed to be normal, $P_1$ and $P_2$ are nothing else but the correspodning Cumulative Distribution Fucntion (CDF). However, the Heston Model assumes that the underlying follows a probability whose closed form isn't known. To be even more precise, the closed form cannot be dervied. This is because the distribution is much more complicated since it depends on the volatility which itself is stochastic. Luckily, despite the obstcle, the Heston probabilities $P_1$ and $P_2$ can still be recovered. This is done through Fourier inversion:
 
 $$ P_j = \frac{1}{2} + \frac{1}{\pi} \int_0^\infty \Re \left( \frac{e^{-iu\ln K} \ phi_j(u)}{iu} \right),du, \qquad j=1,2,
 
