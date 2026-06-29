@@ -21,28 +21,29 @@ or equivalently
 
 $$ f(\sigma) = C_{BS}(\sigma) - C_{market} = 0 $$
 
-where $C_{BS}$ denotes the theoretical Black-Scholes price and $C_{market}$ is the observed market price. Several numerical methods may be employed to solve this nonlinear equation. The Newton–Raphson algorithm is frequently used although it requires the evaluation of option Vega and may fail to converge when the initial guess is poor. Alternatively, Brent's method provides a more robust root-finding procedure with guaranteed convergence provided that the solution lies in the specified interval. The methods' only drawback is its slower convergence. Nevertheless, despite the speed, Brent's method is still commonly preferred in practical implementations due to its numerical stability. 
+where $C_{BS}$ is the theoretical Black-Scholes price and $C_{market}$ is the observed market price. Several numerical methods may be employed to solve this nonlinear equation. The Newton–Raphson algorithm is frequently used although it requires the evaluation of option Vega and may fail to converge when the initial guess is poor. Alternatively, Brent's method provides a more robust root-finding procedure with guaranteed convergence provided that the solution lies in the specified interval. The methods' only drawback is its slower convergence. Nevertheless, despite the slower convergence speed, Brent's method is still commonly preferred in practical implementations due to its numerical stability. 
 
-Although implied volatility is most often extracted using the Black–Scholes model, alternative frameworks such as the Black model for futures options or stochastic volatility models may also be employed. Regardless of the chosen pricing model, the underlying principle remains unchanged: implied volatility is defined as the volatility input that equates the model price with the observed market price.
+Although implied volatility is most often extracted using the Black–Scholes model, alternative frameworks such as the Black model for futures options or stochastic volatility models may also be employed. Regardless of the chosen pricing model, the underlying principle remains unchanged - implied volatility is defined as the volatility input that equates the model price with the observed market price.
 
-Empirical evidence demonstrates that implied volatility is not constant across strikes and maturities. Instead, it exhibits systematic patterns known as volatility smiles, skews, and term structures. To analyse these patterns, implied volatility is commonly plotted against strike price, moneyness, or forward moneyness for a fixed maturity, producing a volatility smile or skew. Moneyness is typically defined as the ratio of strike to spot price ((K/S)), while forward moneyness incorporates carry effects through the forward price,
-[
-M_F=\frac{K}{F},
-]
+Empirical evidence demonstrates that implied volatility is not constant across strikes and maturities. Instead, it exhibits systematic patterns known as volatility smiles, skews and term structures. To analyse these patterns, implied volatility is commonly plotted against strike price $K$, moneyness $M$, or forward moneyness $F$ for a fixed maturity, producing a volatility smile or skew. Moneyness is typically defined as the ratio of strike to spot price $ M $ = $ K/S $, while forward moneyness is defined as
+
+$$ F=\frac{K}{F} $$
+
 where
-[
-F=S e^{(r-q)\tau}.
-]
-Forward moneyness is often preferred as it accounts for interest rates and dividend yields, thereby facilitating more consistent comparisons across maturities.
-A more comprehensive representation is provided by the implied volatility surface, which describes implied volatility as a function of both moneyness (or strike) and time to maturity:
-[
-\sigma_{IV}=\sigma_{IV}(K,\tau),
-]
-or equivalently,
-[
-\sigma_{IV}=\sigma_{IV}(M_F,\tau).
-]
-The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models.
+
+$$ F=S e^{(r-q) T} $$
+
+with $r$ and $q$ being risk-free interest rates and dividend yields respectively.
+
+Forward moneyness is often preferred as it accounts for interest rates and dividend yields, and therefore being  more consistent comparisons across maturities. 
+
+Finally, there is a more comprehensive representation of how implied volatility changes across different maturity and strikes/moneyness/future moneyness. It is provided by the implied volatility surface.
+
+$$ \sigma_{IV} = \sigma_{IV}(F, T) $$
+
+The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models. 
+
+Of course, one needs to be aware of the fact that a typical implied volatilty surface is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because maturities and strikes/moneyness/forward moneyness themselves are discrete. Therefore, a common practice is to connect the points by interpolation which creates a surface.
 
 ## Heston Model. Dynamics
 
@@ -99,12 +100,6 @@ $$ \omega(k, T) = \sigma_{IV}^2 (k, T) T $$
 where $\sigma_{IV}$ denotes the implied volatility, $T$ is the time to maturity and $k$ is log-forward moneyness. 
 
 $$ k = \ln\left(\frac{K}{F}\right) $$
-
-with $K$ denoting the strike price and $F$ the forward price. The forward price itself is defined as
-
-$$ F = S e^{ (r - q) T} $$
-
-where $r$ and $q$ are risk-free interest rates and dividend yields respectively.
 
 For a fixed maturity, the SVI smile is parameterised as
 
