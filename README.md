@@ -25,7 +25,7 @@ where $C_{BS}$ is the theoretical Black-Scholes price and $C_{market}$ is the ob
 
 Although implied volatility is most often extracted using the Black–Scholes model, alternative frameworks such as the Black model for futures options or stochastic volatility models may also be employed. Regardless of the chosen pricing model, the underlying principle remains unchanged - implied volatility is defined as the volatility input that equates the model price with the observed market price.
 
-Empirical evidence demonstrates that implied volatility is not constant across strikes and maturities. Instead, it exhibits systematic patterns known as volatility smiles, skews and term structures. To analyse these patterns, implied volatility is commonly plotted against strike price $K$, moneyness $M$, or forward moneyness $F$ for a fixed maturity, producing a volatility smile or skew. Moneyness is typically defined as the ratio of strike to spot price $ M $ = $ K/S $, while forward moneyness is defined as
+Empirical evidence demonstrates that implied volatility is not constant across strikes and maturities. Instead, it exhibits systematic patterns known as volatility smiles, skews and term structures. To analyse these patterns, implied volatility is commonly plotted against strike price $K$, moneyness $M$, or forward moneyness $F$ for a fixed maturity, producing a volatility smile or skew. Moneyness is typically defined as the ratio of strike to spot price $M$ = $K/S$, while forward moneyness is defined as
 
 $$ F=\frac{K}{F} $$
 
