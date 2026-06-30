@@ -151,7 +151,17 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 
 ## Near ATM Implied Volatilty Across Years
 
+<img width="1191" height="751" alt="Снимок экрана 2026-06-27 в 16 39 48" src="https://github.com/user-attachments/assets/63658e3f-5dea-49d0-a00c-8884c38fb9d5" />
+
+<img width="1175" height="734" alt="Снимок экрана 2026-06-27 в 16 47 20" src="https://github.com/user-attachments/assets/0dd651dc-bf81-4c0f-8e2c-87ae10d959e8" />
+
 ## Low, Moderate and High Volatilty Regimes
+
+<img width="721" height="699" alt="Снимок экрана 2026-06-27 в 17 59 16" src="https://github.com/user-attachments/assets/0b1a61f7-d973-4f1d-9692-962cde420a93" />
+
+<img width="703" height="683" alt="Снимок экрана 2026-06-27 в 18 00 29" src="https://github.com/user-attachments/assets/b4b91b37-1c2e-4bb3-ac4e-810c897eef8e" />
+
+<img width="696" height="699" alt="Снимок экрана 2026-06-27 в 18 01 29" src="https://github.com/user-attachments/assets/4c3b2a69-9085-4f01-8a3e-14dab187f721" />
 
 ## Model Calibration. Heston Model
 
