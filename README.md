@@ -129,21 +129,32 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 The analysis was conducted using S&P 500 European option data spanning the period from 2010 to 2023. As the option dataset did not include the corresponding risk-free interest rates or dividend yields required for option pricing, these inputs were obtained from separate historical datasets.
 
-Historical U.S. Treasury yields were used as proxies for the risk-free interest rate. Since the available Treasury data consisted only of standard maturities (e.g., 1 month, 3 months, 6 months, and 1 year), while the option dataset contained a wider range of maturities, the appropriate interest rate for each option was obtained through linear interpolation between the two nearest available Treasury maturities.
+Historical U.S. Treasury yields were used as proxies for the risk-free interest rate. Since the available Treasury data consisted only of standard maturities (e.g., 1 month, 3 months, 6 months and 1 year), while the option dataset contained a wider range of maturities, the appropriate interest rate for each option was obtained through linear interpolation between the two nearest available Treasury maturities.
 
-Historical dividend data were provided as quarterly values. To obtain the annual dividend yield required by the Black–Scholes model, the most recent four quarterly observations were summed for each option date, producing a rolling annual dividend estimate. Consequently, the dividend yield was allowed to vary over time rather than assuming a constant value across the entire dataset.
-To focus the analysis on the most informative region of the implied volatility surface, the dataset was filtered to retain only options within the near at-the-money (ATM) region. Implied volatilities were then extracted by numerically inverting the Black–Scholes pricing formula using an implementation of Brent's root-finding algorithm. This procedure was repeated for every option in the filtered dataset to construct the market implied volatility surface.
+Historical dividend data were provided as quarterly values. To obtain the annual dividend yield required by the Black-Scholes model, the most recent four quarterly observations were summed for each option date, producing a rolling annual dividend estimate. Consequently, the dividend yield was allowed to vary over time rather than assuming a constant value across the entire dataset.
 
-The extracted implied volatilities were subsequently analysed to investigate the evolution of at-the-money implied volatility and the volatility skew throughout the sample period. The skew was defined as the difference between the implied volatility at forward moneyness 0.9 and that at forward moneyness 1.0. Based on this analysis, three representative trading dates corresponding to low, moderate, and high volatility market regimes were selected for further investigation.
+To focus the analysis on the most informative region of the implied volatility surface, the dataset was filtered to retain only options within the near ATM region. Implied volatilities were then extracted by numerically inverting the Black–Scholes pricing formula using an implementation of Brent's root-finding algorithm. Together with interpolation, this procedure was repeated for every option in the filtered dataset to construct the market implied volatility smiles/skews and surfaces.
 
-The second stage of the project focused on model calibration. A dedicated implementation of the Heston stochastic volatility model, based on its semi-analytical pricing formula, was developed to generate model option prices and implied volatilities. In parallel, the SVI parameterisation was implemented to model the implied volatility smile directly. For each model, a separate objective function based on the root mean square error (RMSE) between market and model-implied volatilities was constructed. In the case of the SVI model, the objective function additionally incorporated Black–Scholes Vega weights, assigning greater importance to options whose prices are more sensitive to changes in implied volatility.
+It should be mentioend separately that the initial option dataset included a column with implied volatility values. However, by invsetigating the numbers, it turned out that these were not extracted using the Black-Scholes framework as these implied volatilty values didn't replicate the option prices in the dataset. A possible explanation is that the numbers were extracted using an alternative framework. Then, of course, one of the project goals was to extract the implied volatilties independently. 
+
+The extracted implied volatilities were subsequently analysed to investigate the evolution of ATM implied volatility and the volatility skew throughout the sample period. The skew was defined as the difference between the implied volatility at forward moneyness 0.9 and that at forward moneyness 1.0. Based on this analysis, three representative trading dates corresponding to low, moderate and high volatility market regimes were selected for further investigation.
+
+The second stage of the project focused on model calibration. A dedicated implementation of the Heston stochastic volatility model, based on its semi-analytical pricing formula, was developed to generate model option prices and implied volatilities. In parallel, the SVI parameterisation was implemented to model the implied volatility smile directly. For each model, a separate function based on the root mean square error (RMSE) between market and model-implied volatilities was constructed. In the case of the SVI model, the RMSE function additionally incorporated Black–Scholes Vega weights. This is a common practice in the SVI model calibration which allows to assign greater importance to options whose prices are more sensitive to changes in implied volatility.
 
 The parameters of both models were estimated by minimising their respective objective functions for each of the three selected market regimes. In addition, the Heston model was calibrated using reduced subsets of the same market data in order to investigate the effect of sample size on calibration performance and parameter stability.
 
-Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the root mean square error (RMSE), absolute error, and relative error between the market and model-implied volatilities.
+Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, discrepancy error and relative error between the market and model-implied volatilities. Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
 
 # Structure
 
 # Results
+
+## Near ATM Implied Volatilty Across Years
+
+## Low, Moderate and High Volatilty Regimes
+
+## Model Calibration. Heston Model
+
+## Model Calibration. SVI Model
 
 # Discussion
