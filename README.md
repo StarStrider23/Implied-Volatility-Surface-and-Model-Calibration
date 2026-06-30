@@ -6,14 +6,14 @@ Project by Alexsey Chernichenko. June 2026.
 
 The aim of this project is to analyse the behaviour of implied volatility (IV) in the S&P 500 options market and assess the ability of different models to reproduce observed market dynamics. Using S&P 500 option data from 2010 to 2023, implied volatilities are extracted by inverting the Black–Scholes model through Brent's numerical root-finding method, incorporating historical risk-free interest rates and dividend yields.
 
-The extracted implied volatilities are used to investigate the evolution of at-the-money (ATM) volatility and volatility skew over time, as well as to construct and compare implied volatility surfaces across different market regimes. In addition, the project calibrates the Heston stochastic volatility model and the Stochastic Volatility Inspired (SVI) model to market data by minimising the root mean square error between observed and model-implied volatilities. The performance of both models is then evaluated across low, moderate and high volatility environments to determine their effectiveness in capturing market-implied volatility dynamics.
+The extracted implied volatilities are used to investigate the evolution of the at-the-money (ATM) volatility and volatility skew over time, as well as to construct and compare implied volatility surfaces across different market regimes. In addition, the project calibrates the Heston stochastic volatility model and the Stochastic Volatility Inspired (SVI) model to market data by minimising the root mean square error between observed and model-implied volatilities. The performance of both models is then evaluated across low, moderate and high volatility environments to determine their effectiveness in capturing market-implied volatility dynamics.
 
 # Background
 
 ## Implied Volatility
 
 Implied volatility (IV) is the volatility parameter that reproduces the observed market price of an option when it is substituted into an option pricing model. Unlike historical volatility that is calculated from past returns, implied volatility reflects the market's expectations of future price fluctuations over the remaining life of the option. Consequently, implied volatility has become a standard measure of market uncertainty and is widely used for comparing options across different strikes and maturities.
-Within the Black-Scholes framework, volatility is the only unobservable model input. Since the Black–Scholes pricing equations cannot be inverted analytically with respect to volatility, implied volatility must be obtained numerically by solving
+Within the Black-Scholes framework (the reader may familiarize themselves with the framework here: https://github.com/StarStrider23/Black-Scholes-project), volatility is the only unobservable model input. Since the Black–Scholes pricing equations cannot be inverted analytically with respect to volatility, implied volatility must be obtained numerically by solving
 
 $$ C_{BS}(\sigma) = C_{market} $$
 
