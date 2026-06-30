@@ -212,8 +212,7 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 | High volatility regime              |   96.08  |  0.029   |  2.29   |  -0.89   |  0.22     | -0.067   | 0.037   | 0.049   |
 | Low volatility regime (sample)      |   22.81  |  0.019   |  0.93   |  -0.58   |  0.019    | -0.015   | 0.014   | 0.017   |
 | Moderate volatility regime (sample) |   15.29  |  0.097   |  1.72   |  -0.99   |  0.43     | -0.003   | 0.019   | 0.025   |
-| High volatility regime (sample)     |   11.94  |  0.042   |  1.0    |  -0.99   |  0.040    | -0.0028  | 0.0052  | 0.0076  |
-
+| High volatility regime (sample)     |   12.09  |  0.042   |  1.01   |  -0.99   |  0.040    | -0.0027  | 0.0052  | 0.0076  |
 
 ## Model Calibration. SVI Model
 
