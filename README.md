@@ -143,7 +143,7 @@ The second stage of the project focused on model calibration. A dedicated implem
 
 The parameters of both models were estimated by minimising their respective objective functions for each of the three selected market regimes. In addition, the Heston model was calibrated using reduced subsets of the same market data in order to investigate the effect of sample size on calibration performance and parameter stability.
 
-Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, mean absolute error (MAE) and relative error ($(\sigma_{market}-\sigma_{model})/\sigma_{market}$) between the market and model-implied volatilities. Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
+Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, mean absolute error (MAE) and mean relative error (MRE) between the market and model-implied volatilities ($(\sigma_{market}-\sigma_{model})/\sigma_{market}$). Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
 
 # Structure
 
@@ -179,16 +179,6 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 
 ### Low Volatility 
 
-MAE is:  0.009852649667434293
-Average relative error is:  -0.0722813670881121
-RMSE: 0.042302903344413244
-
-"kappa": 58.55405216806821
-"theta": 0.021661461600542657
-"xi": 1.1102242541446006
-"rho": -0.9491776136870853
-"v0": 0.07254150605992814
-
 <img width="1440" height="461" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/bc249e61-9f62-49ef-8eea-45616c4cdfc5" />
 
 <img width="1107" height="448" alt="Снимок экрана 2026-06-28 в 14 26 17" src="https://github.com/user-attachments/assets/39cdebe6-bdb2-4c36-9b99-dc2ef988550a" />
@@ -212,6 +202,18 @@ RMSE: 0.042302903344413244
 <img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
 
 ### Smaller Sample
+
+### Parameter comparison
+
+|                                     | $\kappa$ | $\theta$ |  $\xi$  |  $\rho$  |  $\nu_0$  |   MRE    |   MAE   |   RMSE  |
+| ----------------------------------- | -------- | -------- | ------- | -------- | --------- | -------- | ------- | ------- |
+| Low volatility regime               |   58.55  |  0.022   |  1.11   |  -0.95   |  0.073    | -0.072   | 0.033   | 0.042   |
+| Moderate volatility regime          |   36.01  |  0.12    |  2.96   |  -0.99   |  0.46     | -0.042   | 0.047   | 0.057   |
+| High volatility regime              |   96.08  |  0.029   |  2.29   |  -0.89   |  0.22     | -0.067   | 0.037   | 0.049   |
+| Low volatility regime (sample)      |   22.81  |  0.019   |  0.93   |  -0.58   |  0.019    | -0.015   | 0.014   | 0.017   |
+| Moderate volatility regime (sample) |   15.29  |  0.097   |  1.72   |  -0.99   |  0.43     | -0.003   | 0.019   | 0.025   |
+| High volatility regime (sample)     |   11.94  |  0.042   |  1.0    |  -0.99   |  0.040    | -0.0028  | 0.0052  | 0.0076  |
+
 
 ## Model Calibration. SVI Model
 
