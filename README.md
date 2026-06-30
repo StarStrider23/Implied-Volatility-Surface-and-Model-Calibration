@@ -45,7 +45,7 @@ The implied volatility surface offers a complete picture of market expectations 
 
 Of course, one needs to be aware of the fact that a typical implied volatilty surface is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because maturities and strikes/moneyness/forward moneyness themselves are discrete. Therefore, a common practice is to connect the points by interpolation which creates a surface. An example can be found below.
 
-<img width="1021" height="460" alt="Снимок экрана 2026-06-30 в 08 48 29" src="https://github.com/user-attachments/assets/57e2e509-a6a3-4663-b65d-6e1a29bffc6b" />
+<img width="996" height="447" alt="Снимок экрана 2026-06-30 в 08 52 05" src="https://github.com/user-attachments/assets/0e85b1c5-ebf7-462d-88df-1b14c5334111" />
 
 ## Heston Model. Dynamics
 
