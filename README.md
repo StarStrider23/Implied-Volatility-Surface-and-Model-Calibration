@@ -157,14 +157,76 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 
 ## Low, Moderate and High Volatilty Regimes
 
+### Low Volatiltiy 
+
 <img width="721" height="699" alt="Снимок экрана 2026-06-27 в 17 59 16" src="https://github.com/user-attachments/assets/0b1a61f7-d973-4f1d-9692-962cde420a93" />
+
+<img width="1191" height="743" alt="Снимок экрана 2026-06-27 в 18 04 01" src="https://github.com/user-attachments/assets/bd133c08-5716-4f35-862e-6cb5b1d4a9f5" />
+
+### Moderate Volatiltiy
 
 <img width="703" height="683" alt="Снимок экрана 2026-06-27 в 18 00 29" src="https://github.com/user-attachments/assets/b4b91b37-1c2e-4bb3-ac4e-810c897eef8e" />
 
+<img width="1187" height="740" alt="Снимок экрана 2026-06-27 в 18 05 30" src="https://github.com/user-attachments/assets/d690affb-a57c-4684-8e0a-abbd09599dbb" />
+
+### High volatility 
+
 <img width="696" height="699" alt="Снимок экрана 2026-06-27 в 18 01 29" src="https://github.com/user-attachments/assets/4c3b2a69-9085-4f01-8a3e-14dab187f721" />
+
+<img width="1184" height="742" alt="Снимок экрана 2026-06-27 в 18 06 52" src="https://github.com/user-attachments/assets/40f1e696-1006-4f82-8393-51340fe45496" />
 
 ## Model Calibration. Heston Model
 
+### Low Volatility 
+
+<img width="1440" height="461" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/bc249e61-9f62-49ef-8eea-45616c4cdfc5" />
+
+<img width="936" height="440" alt="Снимок экрана 2026-06-28 в 14 19 12" src="https://github.com/user-attachments/assets/27a33c4c-2fd5-4e53-b1ab-6977bd23d57b" />
+
+<img width="1107" height="448" alt="Снимок экрана 2026-06-28 в 14 26 17" src="https://github.com/user-attachments/assets/39cdebe6-bdb2-4c36-9b99-dc2ef988550a" />
+
+### Moderate Volatilty 
+
+<img width="1440" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/88c96f39-d4dd-4dd1-ad11-bce1dfd3f5e8" />
+
+<img width="922" height="432" alt="Снимок экрана 2026-06-28 в 14 20 24" src="https://github.com/user-attachments/assets/e8e83125-a0a6-47c6-8c6e-081dafb21689" />
+
+<img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
+
+### High Volatitility 
+
+<img width="1440" height="466" alt="Снимок экрана 2026-06-28 в 13 24 50" src="https://github.com/user-attachments/assets/fa9aec4e-f313-42d4-8446-de5298fe28a2" />
+
+<img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
+
+<img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
+
+### Smaller Sample
+
 ## Model Calibration. SVI Model
+
+### Low Volatility 
+
+<img width="1215" height="415" alt="Снимок экрана 2026-06-30 в 16 21 39" src="https://github.com/user-attachments/assets/bf755bc5-d233-4809-8cfe-e4545a25f428" />
+
+<img width="1323" height="437" alt="Снимок экрана 2026-06-28 в 16 55 29" src="https://github.com/user-attachments/assets/a198eed5-2cf8-4e6b-b380-94c4793cbf7e" />
+
+<img width="825" height="419" alt="Снимок экрана 2026-06-28 в 16 51 35" src="https://github.com/user-attachments/assets/548b1119-4454-477c-933a-04cc00982874" />
+
+### Moderate Volatilty 
+
+<img width="1204" height="413" alt="Снимок экрана 2026-06-30 в 16 22 50" src="https://github.com/user-attachments/assets/891ea873-3cc8-4bc7-bd80-485d224ff792" />
+
+<img width="1313" height="431" alt="Снимок экрана 2026-06-28 в 16 56 23" src="https://github.com/user-attachments/assets/8cfb4dee-a90d-48cb-8c26-8a4ae9033373" />
+
+<img width="822" height="420" alt="Снимок экрана 2026-06-28 в 16 52 14" src="https://github.com/user-attachments/assets/262f7e78-b908-4ab2-9e08-a4772274b5fb" />
+
+### High Volatitility 
+
+<img width="1222" height="410" alt="Снимок экрана 2026-06-30 в 16 30 17" src="https://github.com/user-attachments/assets/5cd4795d-0c7d-475a-b4d1-59dcd48055c2" />
+
+<img width="1308" height="441" alt="Снимок экрана 2026-06-28 в 16 54 35" src="https://github.com/user-attachments/assets/5e8b36c9-d094-4425-99a9-9fd869c7fa51" />
+
+<img width="825" height="417" alt="Снимок экрана 2026-06-28 в 16 53 07" src="https://github.com/user-attachments/assets/3e5f33dc-7931-4fba-8b74-f478a55c5154" />
 
 # Discussion
