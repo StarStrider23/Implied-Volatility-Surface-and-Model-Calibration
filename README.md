@@ -105,7 +105,7 @@ $$ \omega(k, T) = \sigma_{IV}^2 (k, T) T $$
 
 where $\sigma_{IV}$ denotes the implied volatility, $T$ is the time to maturity and $k$ is log-forward moneyness. 
 
-$$ k = \ln\left(\frac{K}{F}\right) $$
+$$ k = \ln\left(K/F\right) $$
 
 For a fixed maturity, the SVI smile is parameterised as
 
