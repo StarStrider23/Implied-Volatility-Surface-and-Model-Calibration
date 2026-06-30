@@ -25,7 +25,9 @@ where $C_{BS}$ is the theoretical Black-Scholes price and $C_{market}$ is the ob
 
 Although implied volatility is most often extracted using the Black–Scholes model, alternative frameworks such as the Black model for futures options or stochastic volatility models may also be employed. Regardless of the chosen pricing model, the underlying principle remains unchanged - implied volatility is defined as the volatility input that equates the model price with the observed market price.
 
-Empirical evidence demonstrates that implied volatility is not constant across strikes and maturities. Instead, it exhibits systematic patterns known as volatility smiles, skews and term structures. To analyse these patterns, implied volatility is commonly plotted against strike price $K$, moneyness $M$, or forward moneyness $F$ for a fixed maturity, producing a volatility smile or skew. Moneyness is typically defined as the ratio of strike to spot price $M$ = $K/S$, while forward moneyness is defined as
+Empirical evidence demonstrates that implied volatility is not constant across strikes and maturities. Instead, it exhibits systematic patterns known as volatility smiles, skews and term structures. To analyse these patterns, implied volatility is commonly plotted against strike price $K$, moneyness $M$, or forward moneyness $F$ for a fixed maturity, producing a volatility smile or skew. 
+
+Forward moneyness is typically defined as the ratio of strike to spot price $M$ = $K/S$, while forward moneyness is defined as
 
 $$ F=\frac{K}{F} $$
 
@@ -37,13 +39,15 @@ with $r$ and $q$ being risk-free interest rates and dividend yields respectively
 
 Forward moneyness is often preferred as it accounts for interest rates and dividend yields, and therefore being  more consistent comparisons across maturities. 
 
+Of course, one needs to be aware of the fact that a typical implied volatilty smile/skew is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because strikes/moneyness/forward moneyness themselves are discrete, albeit usually densely located. Therefore, a common practice is to connect the points by interpolation which creates a curve. An example can be found below.
+
+<img width="1088" height="411" alt="Снимок экрана 2026-06-30 в 09 28 53" src="https://github.com/user-attachments/assets/b32afcdd-5ef1-4fb3-832d-23ff06b605ff" />
+
 Finally, there is a more comprehensive representation of how implied volatility changes across different maturity and strikes/moneyness/future moneyness. It is provided by the implied volatility surface.
 
 $$ \sigma_{IV} = \sigma_{IV}(F, T) $$
 
-Equivalently $\sigma_{IV}(K, T)$ or $\sigma_{IV}(M, T)$. The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models. 
-
-Of course, one needs to be aware of the fact that a typical implied volatilty surface is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because maturities and strikes/moneyness/forward moneyness themselves are discrete. Therefore, a common practice is to connect the points by interpolation which creates a surface. An example can be found below.
+Equivalently $\sigma_{IV}(K, T)$ or $\sigma_{IV}(M, T)$. The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models. Analogous to an implied volatility smile/skew, an implied volatilty surface is also produced by interpolating. 
 
 <img width="996" height="447" alt="Снимок экрана 2026-06-30 в 08 52 05" src="https://github.com/user-attachments/assets/0e85b1c5-ebf7-462d-88df-1b14c5334111" />
 
