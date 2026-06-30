@@ -143,7 +143,7 @@ The second stage of the project focused on model calibration. A dedicated implem
 
 The parameters of both models were estimated by minimising their respective objective functions for each of the three selected market regimes. In addition, the Heston model was calibrated using reduced subsets of the same market data in order to investigate the effect of sample size on calibration performance and parameter stability.
 
-Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, discrepancy error and relative error between the market and model-implied volatilities. Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
+Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, mean absolute error (MAE) and relative error ($(\sigma_{market}-\sigma_{model})/\sigma_{market}$) between the market and model-implied volatilities. Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
 
 # Structure
 
@@ -179,7 +179,7 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 
 ### Low Volatility 
 
-Average error is:  -0.009852649667434293
+MAE is:  0.009852649667434293
 Average relative error is:  -0.0722813670881121
 RMSE: 0.042302903344413244
 
