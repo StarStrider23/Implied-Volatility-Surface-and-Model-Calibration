@@ -37,11 +37,11 @@ Empirical evidence demonstrates that implied volatility is not constant across s
 
 Forward moneyness is typically defined as the ratio of strike to spot price $M$ = $K/S$, while forward moneyness is defined as
 
-$$ F=\frac{K}{F} $$
+$$ F = K/f $$
 
 where
 
-$$ F=S e^{(r-q) T} $$
+$$ f = S e^{(r-q) T} $$
 
 with $r$ and $q$ being risk-free interest rates and dividend yields respectively.
 
