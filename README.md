@@ -179,27 +179,37 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 
 ### Low Volatility 
 
+Average error is:  -0.009852649667434293
+Average relative error is:  -0.0722813670881121
+RMSE: 0.042302903344413244
+
+"kappa": 58.55405216806821
+"theta": 0.021661461600542657
+"xi": 1.1102242541446006
+"rho": -0.9491776136870853
+"v0": 0.07254150605992814
+
 <img width="1440" height="461" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/bc249e61-9f62-49ef-8eea-45616c4cdfc5" />
 
-<img width="936" height="440" alt="Снимок экрана 2026-06-28 в 14 19 12" src="https://github.com/user-attachments/assets/27a33c4c-2fd5-4e53-b1ab-6977bd23d57b" />
-
 <img width="1107" height="448" alt="Снимок экрана 2026-06-28 в 14 26 17" src="https://github.com/user-attachments/assets/39cdebe6-bdb2-4c36-9b99-dc2ef988550a" />
+
+<img width="936" height="440" alt="Снимок экрана 2026-06-28 в 14 19 12" src="https://github.com/user-attachments/assets/27a33c4c-2fd5-4e53-b1ab-6977bd23d57b" />
 
 ### Moderate Volatilty 
 
 <img width="1440" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/88c96f39-d4dd-4dd1-ad11-bce1dfd3f5e8" />
 
-<img width="922" height="432" alt="Снимок экрана 2026-06-28 в 14 20 24" src="https://github.com/user-attachments/assets/e8e83125-a0a6-47c6-8c6e-081dafb21689" />
-
 <img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
+
+<img width="922" height="432" alt="Снимок экрана 2026-06-28 в 14 20 24" src="https://github.com/user-attachments/assets/e8e83125-a0a6-47c6-8c6e-081dafb21689" />
 
 ### High Volatitility 
 
 <img width="1440" height="466" alt="Снимок экрана 2026-06-28 в 13 24 50" src="https://github.com/user-attachments/assets/fa9aec4e-f313-42d4-8446-de5298fe28a2" />
 
-<img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
-
 <img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
+
+<img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
 
 ### Smaller Sample
 
