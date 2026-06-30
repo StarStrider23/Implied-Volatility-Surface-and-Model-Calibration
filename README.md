@@ -41,7 +41,7 @@ Finally, there is a more comprehensive representation of how implied volatility 
 
 $$ \sigma_{IV} = \sigma_{IV}(F, T) $$
 
-The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models. 
+Equivalently $\sigma_{IV}(K, T)$ or $\sigma_{IV}(M, T)$. The implied volatility surface offers a complete picture of market expectations and serves as the primary object for the calibration and evaluation of volatility models. 
 
 Of course, one needs to be aware of the fact that a typical implied volatilty surface is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because maturities and strikes/moneyness/forward moneyness themselves are discrete. Therefore, a common practice is to connect the points by interpolation which creates a surface. An example can be found below.
 
