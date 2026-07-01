@@ -190,7 +190,8 @@ Figures below present the implied volatility smiles and surface for the selected
 
 ### Low Volatility 
 
-<img width="1440" height="461" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/bc249e61-9f62-49ef-8eea-45616c4cdfc5" />
+<img width="1249" height="452" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/0d3179f9-2983-486e-ab67-f26d8742e3d4" />
+
 
 <img width="1107" height="448" alt="Снимок экрана 2026-06-28 в 14 26 17" src="https://github.com/user-attachments/assets/39cdebe6-bdb2-4c36-9b99-dc2ef988550a" />
 
@@ -198,8 +199,7 @@ Figures below present the implied volatility smiles and surface for the selected
 
 ### Moderate Volatilty 
 
-<img width="1249" height="452" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/cbb5d3c7-fc97-4efe-b39a-3c7e82338f0c" />
-
+<img width="1229" height="466" alt="Снимок экрана 2026-06-28 в 13 24 50" src="https://github.com/user-attachments/assets/238003ad-9dbc-4575-ace0-933198eb06da" />
 
 <img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
 
@@ -207,7 +207,7 @@ Figures below present the implied volatility smiles and surface for the selected
 
 ### High Volatitility 
 
-<img width="1440" height="466" alt="Снимок экрана 2026-06-28 в 13 24 50" src="https://github.com/user-attachments/assets/fa9aec4e-f313-42d4-8446-de5298fe28a2" />
+<img width="1235" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/d5868d0a-b291-4f9e-901d-bc913e12dd1c" />
 
 <img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
 
@@ -272,38 +272,7 @@ Figures below present the implied volatility smiles and surface for the selected
 | 340             | -0.0018   | 0.29     | 0.31     | 0.14     | 0.15     | 0.00020   |
 | 361             | -0.018    | 0.40     | 0.45     | 0.18     | 0.17     | 0.00019   |
 
-### Moderate Volatilty 
-
-<img width="1204" height="413" alt="Снимок экрана 2026-06-30 в 16 22 50" src="https://github.com/user-attachments/assets/891ea873-3cc8-4bc7-bd80-485d224ff792" />
-
-<img width="1313" height="431" alt="Снимок экрана 2026-06-28 в 16 56 23" src="https://github.com/user-attachments/assets/8cfb4dee-a90d-48cb-8c26-8a4ae9033373" />
-
-<img width="822" height="420" alt="Снимок экрана 2026-06-28 в 16 52 14" src="https://github.com/user-attachments/assets/262f7e78-b908-4ab2-9e08-a4772274b5fb" />
-
-| Maturity (Days) |   $a$    |   $b$  | $\rho$ |   $m$   | $\sigma$ | RMSE    |
-| --------------- | -------- | ------ | ------ | ------- | -------- | ------- |
-|        7        | -0.022   | 0.11   | -0.48  | -0.10   | 0.24     | 0.000083 |
-|       10        | -0.022   | 0.11   | -0.48  | -0.11   | 0.24     | 0.000032 |
-|       11        | -0.023   | 0.12   | -0.48  | -0.10   | 0.24     | 0.000096 |
-|       12        | -0.021   | 0.10   | -0.48  | -0.10   | 0.25     | 0.000053 |
-|       13        | -0.022   | 0.11   | -0.48  | -0.095  | 0.25     | 0.00013  |
-|       14        | -0.020   | 0.10   | -0.48  | -0.089  | 0.25     | 0.000048 |
-|       21        | -0.020   | 0.10   | -0.48  | -0.076  | 0.26     | 0.000089 |
-|       28        | -0.024   | 0.12   | -0.48  | -0.072  | 0.27     | 0.00018  |
-|       35        | -0.019   | 0.11   | -0.49  | -0.058  | 0.25     | 0.00017  |
-|       42        | -0.023   | 0.12   | -0.48  | -0.062  | 0.26     | 0.00028  |
-|       56        | -0.017   | 0.12   | -0.49  | -0.043  | 0.24     | 0.00039  |
-|       70        | -0.033   | 0.28   | 0.56   | 0.19    | 0.18     | 0.00054  |
-|       91        | 0.0086   | 0.061  | -0.36  | 0.043   | 0.055    | 0.00033  |
-|      119        | -0.0093  | 0.17   | 0.23   | 0.13    | 0.15     | 0.00033  |
-|      147        | 0.013    | 0.082  | -0.52  | 0.052   | 0.080    | 0.00040  |
-|      160        | 0.015    | 0.081  | -0.43  | 0.061   | 0.075    | 0.00022  |
-|      245        | 0.017    | 0.11   | -0.48  | 0.087   | 0.14     | 0.00041  |
-|      252        | 0.024    | 0.096  | -0.48  | 0.10    | 0.083    | 0.00068  |
-|      336        | 0.033    | 0.11   | -0.49  | 0.11    | 0.099    | 0.00039  |
-|      346        | 0.0051   | 0.13   | -0.52  | 0.15    | 0.28     | 0.00066  |
-
-### High Volatitility 
+### Moderate Volatitility 
 
 <img width="1222" height="410" alt="Снимок экрана 2026-06-30 в 16 30 17" src="https://github.com/user-attachments/assets/5cd4795d-0c7d-475a-b4d1-59dcd48055c2" />
 
@@ -341,6 +310,37 @@ Figures below present the implied volatility smiles and surface for the selected
 |      280        | -0.34   | 0.13   | -0.73    | 2.0  | 0.44     | 0.0015  |
 |      293        | -0.32   | 0.13   | -0.60    | 2.0  | 0.0078   | 0.0029  |
 |      308        | -0.37   | 0.13   | -0.84    | 2.0  | 0.70     | 0.0024  |
+
+### High Volatilty 
+
+<img width="1204" height="413" alt="Снимок экрана 2026-06-30 в 16 22 50" src="https://github.com/user-attachments/assets/891ea873-3cc8-4bc7-bd80-485d224ff792" />
+
+<img width="1313" height="431" alt="Снимок экрана 2026-06-28 в 16 56 23" src="https://github.com/user-attachments/assets/8cfb4dee-a90d-48cb-8c26-8a4ae9033373" />
+
+<img width="822" height="420" alt="Снимок экрана 2026-06-28 в 16 52 14" src="https://github.com/user-attachments/assets/262f7e78-b908-4ab2-9e08-a4772274b5fb" />
+
+| Maturity (Days) |   $a$    |   $b$  | $\rho$ |   $m$   | $\sigma$ | RMSE    |
+| --------------- | -------- | ------ | ------ | ------- | -------- | ------- |
+|        7        | -0.022   | 0.11   | -0.48  | -0.10   | 0.24     | 0.000083 |
+|       10        | -0.022   | 0.11   | -0.48  | -0.11   | 0.24     | 0.000032 |
+|       11        | -0.023   | 0.12   | -0.48  | -0.10   | 0.24     | 0.000096 |
+|       12        | -0.021   | 0.10   | -0.48  | -0.10   | 0.25     | 0.000053 |
+|       13        | -0.022   | 0.11   | -0.48  | -0.095  | 0.25     | 0.00013  |
+|       14        | -0.020   | 0.10   | -0.48  | -0.089  | 0.25     | 0.000048 |
+|       21        | -0.020   | 0.10   | -0.48  | -0.076  | 0.26     | 0.000089 |
+|       28        | -0.024   | 0.12   | -0.48  | -0.072  | 0.27     | 0.00018  |
+|       35        | -0.019   | 0.11   | -0.49  | -0.058  | 0.25     | 0.00017  |
+|       42        | -0.023   | 0.12   | -0.48  | -0.062  | 0.26     | 0.00028  |
+|       56        | -0.017   | 0.12   | -0.49  | -0.043  | 0.24     | 0.00039  |
+|       70        | -0.033   | 0.28   | 0.56   | 0.19    | 0.18     | 0.00054  |
+|       91        | 0.0086   | 0.061  | -0.36  | 0.043   | 0.055    | 0.00033  |
+|      119        | -0.0093  | 0.17   | 0.23   | 0.13    | 0.15     | 0.00033  |
+|      147        | 0.013    | 0.082  | -0.52  | 0.052   | 0.080    | 0.00040  |
+|      160        | 0.015    | 0.081  | -0.43  | 0.061   | 0.075    | 0.00022  |
+|      245        | 0.017    | 0.11   | -0.48  | 0.087   | 0.14     | 0.00041  |
+|      252        | 0.024    | 0.096  | -0.48  | 0.10    | 0.083    | 0.00068  |
+|      336        | 0.033    | 0.11   | -0.49  | 0.11    | 0.099    | 0.00039  |
+|      346        | 0.0051   | 0.13   | -0.52  | 0.15    | 0.28     | 0.00066  |
 
 ### Error comparison
 
