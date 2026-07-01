@@ -162,21 +162,21 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 ### Low Volatiltiy 
 
-<img width="721" height="699" alt="Снимок экрана 2026-06-27 в 17 59 16" src="https://github.com/user-attachments/assets/0b1a61f7-d973-4f1d-9692-962cde420a93" />
-
 <img width="1191" height="743" alt="Снимок экрана 2026-06-27 в 18 04 01" src="https://github.com/user-attachments/assets/bd133c08-5716-4f35-862e-6cb5b1d4a9f5" />
+
+<img width="730" height="683" alt="Снимок экрана 2026-07-01 в 14 01 15" src="https://github.com/user-attachments/assets/08f8193c-8480-4a69-945c-1e8f7851d771" />
 
 ### Moderate Volatiltiy
 
-<img width="703" height="683" alt="Снимок экрана 2026-06-27 в 18 00 29" src="https://github.com/user-attachments/assets/b4b91b37-1c2e-4bb3-ac4e-810c897eef8e" />
-
 <img width="1187" height="740" alt="Снимок экрана 2026-06-27 в 18 05 30" src="https://github.com/user-attachments/assets/d690affb-a57c-4684-8e0a-abbd09599dbb" />
+
+<img width="741" height="688" alt="Снимок экрана 2026-07-01 в 14 02 48" src="https://github.com/user-attachments/assets/31ac5e37-ea3f-44fe-88d8-f35e0c3418c8" />
 
 ### High volatility 
 
-<img width="696" height="699" alt="Снимок экрана 2026-06-27 в 18 01 29" src="https://github.com/user-attachments/assets/4c3b2a69-9085-4f01-8a3e-14dab187f721" />
-
 <img width="1184" height="742" alt="Снимок экрана 2026-06-27 в 18 06 52" src="https://github.com/user-attachments/assets/40f1e696-1006-4f82-8393-51340fe45496" />
+
+<img width="712" height="691" alt="Снимок экрана 2026-07-01 в 14 02 19" src="https://github.com/user-attachments/assets/31e9ef8e-7eef-432d-aa45-7c165819a0ed" />
 
 ## Model Calibration. Heston Model
 
@@ -204,7 +204,19 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 <img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
 
-### Smaller Sample
+## Model Calibration. Heston Model. Smaller Sample
+
+### Low Volatility
+
+<img width="1001" height="710" alt="Снимок экрана 2026-07-01 в 14 10 26" src="https://github.com/user-attachments/assets/aff780fd-31f5-49d7-9b92-8736bd7ddf05" />
+
+### Moderate Volatiltity
+
+<img width="995" height="716" alt="Снимок экрана 2026-07-01 в 14 12 06" src="https://github.com/user-attachments/assets/e3312e9f-1fd1-48a3-b107-264e40e21eae" />
+
+### High Volatility
+
+<img width="1006" height="716" alt="Снимок экрана 2026-07-01 в 14 11 10" src="https://github.com/user-attachments/assets/0ebed451-d04a-4568-bf6e-390d1aa3e176" />
 
 ### Parameter comparison
 
