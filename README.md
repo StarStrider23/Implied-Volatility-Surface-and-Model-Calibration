@@ -196,23 +196,31 @@ Figures compare the market and Heston-implied volatility smiles and surfaces for
 
 <img width="936" height="440" alt="Снимок экрана 2026-06-28 в 14 19 12" src="https://github.com/user-attachments/assets/27a33c4c-2fd5-4e53-b1ab-6977bd23d57b" />
 
-The error heat map shows that the calibration performs best around the ATM region and for longer maturities, with larger errors occurring for shorter maturities and away from the ATM region. On average, the model underestimates implied volatility for forward moneyness below 1 and overestimates it for forward moneyness above 1.
+The error heat map shows that the calibration performs best around the ATM region (around strike = 246,81) and for longer maturities, with larger errors occurring for shorter maturities and away from the ATM region. On average, the model underestimates implied volatility for forward moneyness below 1 and overestimates it for forward moneyness above 1.
 
 <img width="1234" height="438" alt="Снимок экрана 2026-07-01 в 15 31 24" src="https://github.com/user-attachments/assets/7f07657f-eb84-47fb-a9ee-8b724d0df622" />
 
 ### Moderate Volatitility 
 
+Figures compare the market and Heston-implied volatility smiles and surfaces for the moderate volatility regime. As in the low volatility regime, the model provides a better fit for longer maturities. Noticeable discrepancies still remain for shorter dated options. The calibrated smiles are also smoother than those observed in the market. This suggests that the model does not fully reproduce the local variations in implied volatility. 
+
 <img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
 
 <img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
+
+The error heat map confirms that the lowest calibration errors are concentrated around the ATM region (around strike = 421,21) and for longer maturities. Compared to the low volatility regime, however, the model exhibits a stronger tendency to underestimate implied volatility.
 
 <img width="1229" height="466" alt="Снимок экрана 2026-06-28 в 13 24 50" src="https://github.com/user-attachments/assets/238003ad-9dbc-4575-ace0-933198eb06da" />
 
 ### High Volatilty 
 
+Figures present the Heston calibration results for the high-volatility regime. Similar to the previous cases, the model achieves a better fit for longer maturities and the replication of short dated smiles remains less accurate. The smoothing effect of the model is particularly evident here during this period.
+
 <img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
 
 <img width="922" height="432" alt="Снимок экрана 2026-06-28 в 14 20 24" src="https://github.com/user-attachments/assets/e8e83125-a0a6-47c6-8c6e-081dafb21689" />
+
+The error heat map again indicates the lowest errors around the ATM region (around strike = 270,94) and for longer maturities. Relative to the low volatility regime, the model shows a somewhat greater tendency to underestimate implied volatility, although this effect seems to be less pronounced than for the moderate volatility regime.
 
 <img width="1235" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/d5868d0a-b291-4f9e-901d-bc913e12dd1c" />
 
