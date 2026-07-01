@@ -198,7 +198,8 @@ Figures below present the implied volatility smiles and surface for the selected
 
 ### Moderate Volatilty 
 
-<img width="1440" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/88c96f39-d4dd-4dd1-ad11-bce1dfd3f5e8" />
+<img width="1249" height="452" alt="Снимок экрана 2026-06-28 в 13 25 38" src="https://github.com/user-attachments/assets/cbb5d3c7-fc97-4efe-b39a-3c7e82338f0c" />
+
 
 <img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
 
