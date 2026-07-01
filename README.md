@@ -202,7 +202,7 @@ The error heat map shows that the calibration performs best around the ATM regio
 
 ### Moderate Volatitility 
 
-Figures compare the market and Heston-implied volatility smiles and surfaces for the moderate volatility regime. As in the low volatility regime, the model provides a better fit for longer maturities, although discrapancies are still noticable. The calibrated smiles are also smoother than those observed in the market. This suggests that the model does not fully reproduce the local variations in implied volatility. 
+Figures compare the market and Heston-implied volatility smiles and surfaces for the moderate volatility regime. As in the low volatility regime, the model provides a poor fit for shorter maturities and a better fit for longer ones, although discrapancies are still noticable. The calibrated smiles are also smoother than those observed in the market. This suggests that the model does not fully reproduce the local variations in implied volatility. 
 
 <img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
 
