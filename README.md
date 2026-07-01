@@ -202,7 +202,7 @@ The error heat map shows that the calibration performs best around the ATM regio
 
 ### Moderate Volatitility 
 
-Figures compare the market and Heston-implied volatility smiles and surfaces for the moderate volatility regime. As in the low volatility regime, the model provides a better fit for longer maturities. Noticeable discrepancies still remain for shorter dated options. The calibrated smiles are also smoother than those observed in the market. This suggests that the model does not fully reproduce the local variations in implied volatility. 
+Figures compare the market and Heston-implied volatility smiles and surfaces for the moderate volatility regime. As in the low volatility regime, the model provides a better fit for longer maturities, although discrapancies are still noticable. The calibrated smiles are also smoother than those observed in the market. This suggests that the model does not fully reproduce the local variations in implied volatility. 
 
 <img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
 
@@ -214,7 +214,7 @@ The error heat map confirms that the lowest calibration errors are concentrated 
 
 ### High Volatilty 
 
-Figures present the Heston calibration results for the high-volatility regime. Similar to the previous cases, the model achieves a better fit for longer maturities and the replication of short dated smiles remains less accurate. The smoothing effect of the model is particularly evident here during this period.
+Figures present the Heston calibration results for the high-volatility regime. Similar to the previous cases, the model achieves a somewhat better fit for longer maturities and the replication of short dated smiles remains much less accurate. The smoothing effect of the model is particularly evident here during this period.
 
 <img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
 
