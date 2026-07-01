@@ -323,10 +323,10 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 ### Error comparison
 
-|                                     |           MRE          |   MAE   |
-| ----------------------------------- | ---------------------- | ------- |
-| Low volatility regime               |        -0.00015        | 0.0023  |
-| Moderate volatility regime          | -8.5 $\cdot$ $10^{-6}$ | 0.0023  |
-| High volatility regime              |         -0.0019        | 0.014   |
+|                                     |           MRE          |   MAE   |   ARMSE   |
+| ----------------------------------- | ---------------------- | ------- | --------- |
+| Low volatility regime               |        -0.00015        | 0.0023  |  0.00019  |
+| Moderate volatility regime          | -8.5 $\cdot$ $10^{-6}$ | 0.0023  |  0.00028  |
+| High volatility regime              |         -0.0019        | 0.014   |  0.0016   |
 
 # Discussion
