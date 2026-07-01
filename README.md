@@ -380,7 +380,7 @@ For the high volatility regime, the error increases slightly (as reflected acros
 |                                     |           MRE          |   MAE   |   ARMSE   |
 | ----------------------------------- | ---------------------- | ------- | --------- |
 | Low volatility regime               |        -0.00015        | 0.0023  |  0.00019  |
-| Moderate volatility regime          | -8.5 $\cdot$ $10^{-6}$ | 0.0023  |  0.00028  |
+| Moderate volatility regime          |        -0.0000085      | 0.0023  |  0.00028  |
 | High volatility regime              |         -0.0019        | 0.014   |  0.0016   |
 
 # Discussion
