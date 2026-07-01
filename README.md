@@ -196,21 +196,21 @@ Figures below present the implied volatility smiles and surface for the selected
 
 <img width="936" height="440" alt="Снимок экрана 2026-06-28 в 14 19 12" src="https://github.com/user-attachments/assets/27a33c4c-2fd5-4e53-b1ab-6977bd23d57b" />
 
-### Moderate Volatilty 
-
-<img width="1235" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/d5868d0a-b291-4f9e-901d-bc913e12dd1c" />
-
-<img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
-
-<img width="922" height="432" alt="Снимок экрана 2026-06-28 в 14 20 24" src="https://github.com/user-attachments/assets/e8e83125-a0a6-47c6-8c6e-081dafb21689" />
-
-### High Volatitility 
+### Moderate Volatitility 
 
 <img width="1229" height="466" alt="Снимок экрана 2026-06-28 в 13 24 50" src="https://github.com/user-attachments/assets/238003ad-9dbc-4575-ace0-933198eb06da" />
 
 <img width="1100" height="441" alt="Снимок экрана 2026-06-28 в 14 32 20" src="https://github.com/user-attachments/assets/16cad50d-8ef6-4c5a-b850-8e80d477129a" />
 
 <img width="929" height="435" alt="Снимок экрана 2026-06-28 в 14 22 54" src="https://github.com/user-attachments/assets/e8903f41-5734-4783-a8df-8b92c49a010d" />
+
+### High Volatilty 
+
+<img width="1235" height="466" alt="Снимок экрана 2026-06-28 в 13 26 26" src="https://github.com/user-attachments/assets/d5868d0a-b291-4f9e-901d-bc913e12dd1c" />
+
+<img width="1094" height="441" alt="Снимок экрана 2026-06-28 в 14 27 31" src="https://github.com/user-attachments/assets/81d5bfee-9a32-4faa-9d1f-78e8805a97b3" />
+
+<img width="922" height="432" alt="Снимок экрана 2026-06-28 в 14 20 24" src="https://github.com/user-attachments/assets/e8e83125-a0a6-47c6-8c6e-081dafb21689" />
 
 ## Model Calibration. Heston Model. Smaller Sample
 
