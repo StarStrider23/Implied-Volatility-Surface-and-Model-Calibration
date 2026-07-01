@@ -373,7 +373,7 @@ While the model still underestimates implied volatility on average, the magnitud
 
 ### Error comparison
 
-SVI performs extremely well across all regimes with consistently very low ARMSE (average RMSE) values which demonstrates a near perfect fit to the implied volatility surface. The model is particularly accurate for the low and moderate volatility regimes. There, both MRE and MAE are closer to zero.
+SVI performs extremely well across all regimes with consistently very low ARMSE (average RMSE across maturities) values which demonstrates a near perfect fit to the implied volatility surface. The model is particularly accurate for the low and moderate volatility regimes. There, both MRE and MAE are closer to zero.
 
 For the high volatility regime, the error increases slightly (as reflected across all error metrics), but still remains low in absolute terms. Overall, the results confirm that SVI provides a highly accurate and stable representation of the implied volatility surface across different market conditions.
 
