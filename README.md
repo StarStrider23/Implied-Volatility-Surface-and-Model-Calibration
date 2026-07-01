@@ -226,6 +226,8 @@ The error heat map again indicates the lowest errors around the ATM region (arou
 
 ## Model Calibration. Heston Model. Smaller Sample
 
+The reduced sample calibration shows a similar error structure to the full sample results with best performance around the ATM region and for longer maturities. However, the overall error magnitude is lower which is partially due to a higher number of optimisation iterations used, which improved convergence of the calibration.
+
 ### Low Volatility
 
 <img width="1001" height="710" alt="Снимок экрана 2026-07-01 в 14 10 26" src="https://github.com/user-attachments/assets/aff780fd-31f5-49d7-9b92-8736bd7ddf05" />
@@ -239,6 +241,10 @@ The error heat map again indicates the lowest errors around the ATM region (arou
 <img width="1006" height="716" alt="Снимок экрана 2026-07-01 в 14 11 10" src="https://github.com/user-attachments/assets/0ebed451-d04a-4568-bf6e-390d1aa3e176" />
 
 ### Parameter comparison
+
+The calibrated Heston parameters show clear regime dependence. The long-run variance $\theta$, initial variance $\nu_0$ and volatility of volatility $\xi$ all increase with market stress, consistent with higher and more variable implied volatility in the moderate and high-volatility regimes. The correlation parameter $\rho$ remains strongly negative across all regimes while $\kappa$ varies without a clear pattern which seems to be more sensitive to calibration dynamics.
+
+In terms of fit quality, the full samples calibrations exhibit higher MAE and RMSE whereas the smaller samples results achieve lower errors which is partially due to improved optimisation convergence. Overall, the model shows a small negative mean relative error across all regimes and samples, indicating a slight tendency to overestimate implied volatility on average.
 
 |                                     | $\kappa$ | $\theta$ |  $\xi$  |  $\rho$  |  $\nu_0$  |   MRE    |   MAE   |   RMSE  |
 | ----------------------------------- | -------- | -------- | ------- | -------- | --------- | -------- | ------- | ------- |
