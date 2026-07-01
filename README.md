@@ -154,6 +154,8 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 ## Near ATM Implied Volatilty Across Years
 
+From the figures below one can see that year 2017, being the year with the lowest average implied volatility, the largest skew and the largest elevation of the near-ATM left wing compared to the ATM region, corresponds to a low volatiltiy regime. On the otehr hand, the highest implied volatiltiy was observed duirng 2020, the first year of the COVID-19 pandemic, while both skew and elevation level remained moderate. The remaining years exhibited implied volatility levels between these levels, although several periods were characterized by temporary increases in market uncertainty. To provide a representative benchmark under more typical market conditions, a trading date from 2023 was selected as the moderate volatility regime.
+
 <img width="1191" height="751" alt="Снимок экрана 2026-06-27 в 16 39 48" src="https://github.com/user-attachments/assets/63658e3f-5dea-49d0-a00c-8884c38fb9d5" />
 
 <img width="1175" height="734" alt="Снимок экрана 2026-06-27 в 16 47 20" src="https://github.com/user-attachments/assets/0dd651dc-bf81-4c0f-8e2c-87ae10d959e8" />
@@ -162,17 +164,25 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 ### Low Volatiltiy 
 
+Figures below present the implied volatility smiles and the corresponding implied volatility surface for the selected date in 2017. Implied volatilities are relatively low across all maturities, ranging approximately from 0.16 to 0.41 The smiles exhibit a pronounced negative and steep skew, with implied volatility increasing as forward moneyness decreases below one. This reflects the higher demand for downside protection typical of equity index options. Both smiles and surface are smooth across maturities, with only modest variation in the level of implied volatility indicating a stable market environment.
+
 <img width="1191" height="743" alt="Снимок экрана 2026-06-27 в 18 04 01" src="https://github.com/user-attachments/assets/bd133c08-5716-4f35-862e-6cb5b1d4a9f5" />
 
 <img width="730" height="683" alt="Снимок экрана 2026-07-01 в 14 01 15" src="https://github.com/user-attachments/assets/08f8193c-8480-4a69-945c-1e8f7851d771" />
 
 ### Moderate Volatiltiy
 
+Figures below present the implied volatility smiles and surface for the selected trading date in 2023 which represents a moderate volatility market regime. Implied volatilities here are lower than those observed during the COVID-19 period but remain above the levels seen in 2017. In particular, most of implied volatilties land in between 0.21 and 0.8. The implied volatility surface and smiles are generally relatively smooth, although they exhibit slightly greater irregularity than in the low volatility regime. A negative volatility skew is still present, however, the skew is less steep than in the 2017 sample, resulting in an intermediate surface shape between the low and high volatility regimes.
+
+ranging approximately from 0.16 to 0.4
+
 <img width="1187" height="740" alt="Снимок экрана 2026-06-27 в 18 05 30" src="https://github.com/user-attachments/assets/d690affb-a57c-4684-8e0a-abbd09599dbb" />
 
 <img width="741" height="688" alt="Снимок экрана 2026-07-01 в 14 02 48" src="https://github.com/user-attachments/assets/31ac5e37-ea3f-44fe-88d8-f35e0c3418c8" />
 
 ### High volatility 
+
+Figures below present the implied volatility smiles and surface for the selected trading date during the COVID-19 in 2020. Compared with the low and moderate volatility regimes, implied volatilities here are substantially higher across all maturities ranging approximately from 0.25 to 1.1, resulting in an overall upward shift of the implied volatility surface. Both the surface and the volatility smiles appear less smooth, exhibiting more pronounced local peaks and curvature that reflect the heightened market uncertainty during this period. Although the negative skew remains visible, it is less steep compared to those of the low and moderate regimes.
 
 <img width="1184" height="742" alt="Снимок экрана 2026-06-27 в 18 06 52" src="https://github.com/user-attachments/assets/40f1e696-1006-4f82-8393-51340fe45496" />
 
