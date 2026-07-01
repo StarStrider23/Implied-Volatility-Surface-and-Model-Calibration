@@ -66,7 +66,7 @@ $$ f = S e^{(r-q) T} $$
 
 with $r$ and $q$ being risk-free interest rates and dividend yields respectively.
 
-Forward moneyness is often preferred as it accounts for interest rates and dividend yields, and therefore being  more consistent comparisons across maturities. 
+Forward moneyness is often preferred as it accounts for interest rates and dividend yields, and therefore being a more consistent comparison across maturities. 
 
 Of course, one needs to be aware of the fact that a typical implied volatilty smile/skew is also a product of interpolation. There does not exist a continuous spectrum of implied volatilties simply because strikes/moneyness/forward moneyness themselves are discrete, albeit usually densely located. Therefore, a common practice is to connect the points by interpolation which creates a curve. An example can be found below.
 
