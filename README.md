@@ -210,11 +210,11 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 |                                     | $\kappa$ | $\theta$ |  $\xi$  |  $\rho$  |  $\nu_0$  |   MRE    |   MAE   |   RMSE  |
 | ----------------------------------- | -------- | -------- | ------- | -------- | --------- | -------- | ------- | ------- |
 | Low volatility regime               |   58.55  |  0.022   |  1.11   |  -0.95   |  0.073    | -0.072   | 0.033   | 0.042   |
-| Moderate volatility regime          |   36.01  |  0.12    |  2.96   |  -0.99   |  0.46     | -0.042   | 0.047   | 0.057   |
-| High volatility regime              |   96.08  |  0.029   |  2.29   |  -0.89   |  0.22     | -0.067   | 0.037   | 0.049   |
+| Moderate volatility regime          |   96.08  |  0.029   |  2.29   |  -0.89   |  0.22     | -0.067   | 0.037   | 0.049   |
+| High volatility regime              |   36.01  |  0.12    |  2.96   |  -0.99   |  0.46     | -0.042   | 0.047   | 0.057   |
 | Low volatility regime (sample)      |   22.81  |  0.019   |  0.93   |  -0.58   |  0.019    | -0.015   | 0.014   | 0.017   |
-| Moderate volatility regime (sample) |   15.29  |  0.097   |  1.72   |  -0.99   |  0.43     | -0.003   | 0.019   | 0.025   |
-| High volatility regime (sample)     |   12.09  |  0.042   |  1.01   |  -0.99   |  0.040    | -0.0027  | 0.0052  | 0.0076  |
+| Moderate volatility regime (sample) |   12.09  |  0.042   |  1.01   |  -0.99   |  0.040    | -0.0027  | 0.0052  | 0.0076  |
+| High volatility regime (sample)     |   15.29  |  0.097   |  1.72   |  -0.99   |  0.43     | -0.003   | 0.0019  | 0.025   |
 
 ## Model Calibration. SVI Model
 
@@ -241,5 +241,16 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 <img width="1308" height="441" alt="Снимок экрана 2026-06-28 в 16 54 35" src="https://github.com/user-attachments/assets/5e8b36c9-d094-4425-99a9-9fd869c7fa51" />
 
 <img width="825" height="417" alt="Снимок экрана 2026-06-28 в 16 53 07" src="https://github.com/user-attachments/assets/3e5f33dc-7931-4fba-8b74-f478a55c5154" />
+
+### Error comparison
+
+|                                     |   MRE      |   MAE   |   RMSE  |
+| ----------------------------------- | ---------- | ------- | ------- |
+| Low volatility regime               | -0.00015   | 0.0023  |    |
+| Moderate volatility regime          | -8.5 * $10^{-6}$     | 0.0023   |    |
+| High volatility regime              | -0.042     | 0.047   |    |
+
+MAE is:  0.0022987437769462155
+MRE is:  -8.478997914407059e-06
 
 # Discussion
