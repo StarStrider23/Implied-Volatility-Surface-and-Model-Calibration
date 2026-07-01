@@ -164,7 +164,7 @@ From the figures below one can see that year 2017, being the year with the lowes
 
 ### Low Volatiltiy 
 
-Figures below present the implied volatility smiles and the corresponding implied volatility surface for the selected date in 2017. Implied volatilities are relatively low across all maturities, ranging approximately from 0.16 to 0.41 The smiles exhibit a pronounced negative and steep skew, with implied volatility increasing as forward moneyness decreases below one. This reflects the higher demand for downside protection typical of equity index options. Both smiles and surface are smooth across maturities, with only modest variation in the level of implied volatility indicating a stable market environment.
+Figures below present the implied volatility smiles and the corresponding implied volatility surface for the selected date in 2017. Implied volatilities are relatively low across all maturities, ranging approximately from 0.16 to 0.41. The smiles exhibit a pronounced negative and steep skew, with implied volatility increasing as forward moneyness decreases below one. Both smiles and surface are smooth across maturities, with only modest variation in the level of implied volatility indicating a stable market environment.
 
 <img width="1191" height="743" alt="Снимок экрана 2026-06-27 в 18 04 01" src="https://github.com/user-attachments/assets/bd133c08-5716-4f35-862e-6cb5b1d4a9f5" />
 
