@@ -226,7 +226,7 @@ The error heat map again indicates the lowest errors around the ATM region (arou
 
 ## Model Calibration. Heston Model. Smaller Sample
 
-The reduced sample calibration shows a similar error structure to the full sample results with best performance around the ATM region and for longer maturities. However, the overall error magnitude is lower which is partially due to a higher number of optimisation iterations used, which improved convergence of the calibration.
+The reduced sample calibration shows a similar error structure to the full sample results. However, the overall error magnitude is lower which is partially due to a higher number of optimisation iterations used, which improved convergence of the calibration.
 
 ### Low Volatility
 
