@@ -15,6 +15,27 @@ The project uses publicly available datasets from the following sources:
 1. **S&P 500 Options Data** : https://www.kaggle.com/datasets/dudesurfin/spy-options-eod-volatility-surface-2010-2023
 2. **U.S. Treasury Yields** : https://www.kaggle.com/datasets/guillemservera/us-treasury-yields-daily
 3. **S&P Stock Data with Dividend Yields** : https://www.kaggle.com/datasets/aliraza948/spdr-s-and-p-500-etf-spy
+
+# Methodology
+
+The analysis was conducted using S&P 500 European option data spanning the period from 2010 to 2023. As the option dataset did not include the corresponding risk-free interest rates or dividend yields required for option pricing, these inputs were obtained from separate historical datasets.
+
+Historical U.S. Treasury yields were used as proxies for the risk-free interest rate. Since the available Treasury data consisted only of standard maturities (e.g., 1 month, 3 months, 6 months and 1 year), while the option dataset contained a wider range of maturities, the appropriate interest rate for each option was obtained through linear interpolation between the two nearest available Treasury maturities.
+
+Historical dividend data were provided as quarterly values. To obtain the annual dividend yield required by the Black-Scholes model, the most recent four quarterly observations were summed for each option date, producing a rolling annual dividend estimate. Consequently, the dividend yield was allowed to vary over time rather than assuming a constant value across the entire dataset.
+
+To focus the analysis on the most informative region of the implied volatility surface, the dataset was filtered to retain only options within the near ATM region. Implied volatilities were then extracted by numerically inverting the Black–Scholes pricing formula using an implementation of Brent's root-finding algorithm. Together with interpolation, this procedure was repeated for every option in the filtered dataset to construct the market implied volatility smiles/skews and surfaces.
+
+It should be mentioend separately that the initial option dataset included a column with implied volatility values. However, by invsetigating the numbers, it turned out that these were not extracted using the Black-Scholes framework as these implied volatilty values didn't replicate the option prices in the dataset. A possible explanation is that the numbers were extracted using an alternative framework. Then, of course, one of the project goals was to extract the implied volatilties independently. 
+
+The extracted implied volatilities were subsequently analysed to investigate the evolution of ATM implied volatility and the volatility skew throughout the sample period. The skew was defined as the difference between the implied volatility at forward moneyness 0.9 and that at forward moneyness 1.0. Based on this analysis, three representative trading dates corresponding to low, moderate and high volatility market regimes were selected for further investigation.
+
+The second stage of the project focused on model calibration. A dedicated implementation of the Heston stochastic volatility model, based on its semi-analytical pricing formula, was developed to generate model option prices and implied volatilities. In parallel, the SVI parameterisation was implemented to model the implied volatility smile directly. For each model, a separate function based on the root mean square error (RMSE) between market and model-implied volatilities was constructed. In the case of the SVI model, the RMSE function additionally incorporated Black–Scholes Vega weights. This is a common practice in the SVI model calibration which allows to assign greater importance to options whose prices are more sensitive to changes in implied volatility. 
+
+The parameters of both models were estimated by minimising their respective objective functions for each of the three selected market regimes. In addition, the Heston model was calibrated using reduced subsets of the same market data in order to investigate the effect of sample size on calibration performance and parameter stability.
+
+Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, mean absolute error (MAE) and mean relative error (MRE) between the market and model-implied volatilities ($(\sigma_{market}-\sigma_{model})/\sigma_{market}$). Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
+
  
 # Background
 
@@ -103,6 +124,8 @@ where $v_0$ is the initial variance while the functions $C(u, T)$ and $D(u, T)$ 
 
 An alternative formulation, commonly known as the Little Heston Trap, exists. It modifies the original representation of the characteristic function in order to avoid discontinuities associated with complex logarithms. This approach improves numerical stability and is frequently preferred in practical implementations, particularly when calibrating the model repeatedly to market data. 
 
+Finally, even if it wasn't explicitely stated, the reader may have already understood that the set of parameter to be estimated is ($\kappa$, $\theta$, $\xi$, $\rho$, $\nu_0$) for the Heston model.
+
 ## Stochastic Volatilty Inspired (SVI) model
 
 Unlike the Heston model, which specifies stochastic dynamics for the underlying asset and its volatility, SVI directly parameterises the implied volatility surface. It models the shape of market implied volatility smiles without imposing assumptions on the underlying asset price process.
@@ -119,33 +142,11 @@ For a fixed maturity, the SVI smile is parameterised as
 
 $$ \omega(k) = a + b \left( \rho(k - m) + \sqrt{(k - m)^2 + \sigma^2} \right)  $$
 
-where $a$, $b$, $\rho$, $m$ and $\sigma$ are model parameters. The parameter $a$ controls the overall level of total variance, $b$ determines the slope of the smile wings, $\rho$ governs the orientation and asymmetry of the smile, $m$ shifts the location of the smile along the moneyness axis and $\sigma$ controls the curvature around the smile minimum.
+where $a$, $b$, $\rho$, $m$ and $\sigma$ are model parameters. The parameter $a$ controls the overall level of total variance, $b$ determines the slope of the smile wings, $\rho$ governs the orientation and asymmetry of the smile, $m$ shifts the location of the smile along the moneyness axis and $\sigma$ controls the curvature around the smile minimum. These are the parameters that will be estimated.
 
 Since SVI directly models total implied variance rather than option prices, calibration is typically performed by minimising the discrepancy between market and model-implied volatilities across strikes for each maturity. 
 
 As a final note, it was already mentioned that SVI does not rely on an underlying stochastic process and directly parametrises implied volatility. It therefore cannot be used to simulate asset price dynamics directly unlike the Heston model. Instead, it should be viewed as a flexible and practical representation of market-implied volatility surfaces. Its ability to accurately fit market data and its computational speed have made SVI a widely adopted framework in both academic research and industry practice.
-
-# Methodology
-
-The analysis was conducted using S&P 500 European option data spanning the period from 2010 to 2023. As the option dataset did not include the corresponding risk-free interest rates or dividend yields required for option pricing, these inputs were obtained from separate historical datasets.
-
-Historical U.S. Treasury yields were used as proxies for the risk-free interest rate. Since the available Treasury data consisted only of standard maturities (e.g., 1 month, 3 months, 6 months and 1 year), while the option dataset contained a wider range of maturities, the appropriate interest rate for each option was obtained through linear interpolation between the two nearest available Treasury maturities.
-
-Historical dividend data were provided as quarterly values. To obtain the annual dividend yield required by the Black-Scholes model, the most recent four quarterly observations were summed for each option date, producing a rolling annual dividend estimate. Consequently, the dividend yield was allowed to vary over time rather than assuming a constant value across the entire dataset.
-
-To focus the analysis on the most informative region of the implied volatility surface, the dataset was filtered to retain only options within the near ATM region. Implied volatilities were then extracted by numerically inverting the Black–Scholes pricing formula using an implementation of Brent's root-finding algorithm. Together with interpolation, this procedure was repeated for every option in the filtered dataset to construct the market implied volatility smiles/skews and surfaces.
-
-It should be mentioend separately that the initial option dataset included a column with implied volatility values. However, by invsetigating the numbers, it turned out that these were not extracted using the Black-Scholes framework as these implied volatilty values didn't replicate the option prices in the dataset. A possible explanation is that the numbers were extracted using an alternative framework. Then, of course, one of the project goals was to extract the implied volatilties independently. 
-
-The extracted implied volatilities were subsequently analysed to investigate the evolution of ATM implied volatility and the volatility skew throughout the sample period. The skew was defined as the difference between the implied volatility at forward moneyness 0.9 and that at forward moneyness 1.0. Based on this analysis, three representative trading dates corresponding to low, moderate and high volatility market regimes were selected for further investigation.
-
-The second stage of the project focused on model calibration. A dedicated implementation of the Heston stochastic volatility model, based on its semi-analytical pricing formula, was developed to generate model option prices and implied volatilities. In parallel, the SVI parameterisation was implemented to model the implied volatility smile directly. For each model, a separate function based on the root mean square error (RMSE) between market and model-implied volatilities was constructed. In the case of the SVI model, the RMSE function additionally incorporated Black–Scholes Vega weights. This is a common practice in the SVI model calibration which allows to assign greater importance to options whose prices are more sensitive to changes in implied volatility. 
-
-Even if it wasn't explicitely stated, the reader may have already understood that the parameters that the  be estimated are ($\kappa$, $\theta$, $\xi$, $\rho$, $\nu_0$) for the Heston model and ($a$, $b$, $\rho$, $m$, $\sigma$) for the SVI model. (???)
-
-The parameters of both models were estimated by minimising their respective objective functions for each of the three selected market regimes. In addition, the Heston model was calibrated using reduced subsets of the same market data in order to investigate the effect of sample size on calibration performance and parameter stability.
-
-Finally, the calibrated models were evaluated by comparing their implied volatility surfaces and volatility smiles against the extracted market implied volatilities. Model performance was assessed both visually and quantitatively through the RMSE, mean absolute error (MAE) and mean relative error (MRE) between the market and model-implied volatilities ($(\sigma_{market}-\sigma_{model})/\sigma_{market}$). Additionally, error heatmaps were plotted in order to aid to asses model performance visually.
 
 # Structure
 
@@ -226,7 +227,7 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 
 <img width="825" height="419" alt="Снимок экрана 2026-06-28 в 16 51 35" src="https://github.com/user-attachments/assets/548b1119-4454-477c-933a-04cc00982874" />
 
-| TTM (Days) |     a     |     b    |    rho   |    m     |  sigma  |    RMSE   |
+| TTM (Days) |     a     |     b    |    rho   |    m     |  sigma   |    RMSE   |
 |-----------:|----------:|---------:|---------:|---------:|---------:|---------:|
 | 9          | -0.023    | 0.13     | -0.48    | -0.099   | 0.21     | 0.000090 |
 | 11         | -0.020    | 0.087    | -0.48    | -0.084   | 0.27     | 0.00010  |
@@ -237,18 +238,18 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 | 30         | -0.022    | 0.11     | -0.49    | -0.052   | 0.24     | 0.00010  |
 | 32         | -0.024    | 0.12     | -0.48    | -0.064   | 0.25     | 0.00022  |
 | 39         | -0.030    | 0.14     | -0.48    | -0.074   | 0.27     | 0.00024  |
-| 53         | -0.00092  | 0.083     | -0.44   | -0.011   | 0.081    | 0.00024  |
-| 67         | 0.0016    | 0.079     | -0.46   | -0.0045  | 0.068    |  0.00024 |
-| 88         | 0.0023    | 0.089     | -0.42   | -0.00090 | 0.077    | 0.00022  |
-| 116        | 0.0038    | 0.098     | -0.43   | 0.0039   | 0.091    | 0.00027  |
-| 144        | -0.037    | 0.46      | 0.61    | 0.16     | 0.14     | 0.00017  |
-| 158        | -0.046    | 0.63      | 0.70    | 0.18     | 0.14     | 0.00015  |
-| 179        | -0.054    | 0.85      | 0.77    | 0.21     | 0.13     | 0.00014  |
-| 235        | -0.0093   | 0.25      | 0.24    | 0.099    | 0.14     | 0.00024  |
-| 248        | -0.0056   | 0.25      | 0.25    | 0.10     | 0.14     | 0.00022  |
-| 326        | 0.031     | 0.12      | -0.41   | 0.044    | 0.070    | 0.00037  |
-| 340        | -0.0018   | 0.29      | 0.31    | 0.14     | 0.15     | 0.00020  |
-| 361        | -0.018    | 0.40      | 0.45    | 0.18     | 0.17     | 0.00019  |
+| 53         | -0.00092  | 0.083    | -0.44    | -0.011   | 0.081    | 0.00024  |
+| 67         | 0.0016    | 0.079    | -0.46    | -0.0045  | 0.068    |  0.00024 |
+| 88         | 0.0023    | 0.089    | -0.42    | -0.00090 | 0.077    | 0.00022  |
+| 116        | 0.0038    | 0.098    | -0.43    | 0.0039   | 0.091    | 0.00027  |
+| 144        | -0.037    | 0.46     | 0.61     | 0.16     | 0.14     | 0.00017  |
+| 158        | -0.046    | 0.63     | 0.70     | 0.18     | 0.14     | 0.00015  |
+| 179        | -0.054    | 0.85     | 0.77     | 0.21     | 0.13     | 0.00014  |
+| 235        | -0.0093   | 0.25     | 0.24     | 0.099    | 0.14     | 0.00024  |
+| 248        | -0.0056   | 0.25     | 0.25     | 0.10     | 0.14     | 0.00022  |
+| 326        | 0.031     | 0.12     | -0.41    | 0.044    | 0.070    | 0.00037  |
+| 340        | -0.0018   | 0.29     | 0.31     | 0.14     | 0.15     | 0.00020  |
+| 361        | -0.018    | 0.40     | 0.45     | 0.18     | 0.17     | 0.00019  |
 
 ### Moderate Volatilty 
 
