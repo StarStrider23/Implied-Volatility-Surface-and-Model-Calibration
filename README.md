@@ -227,7 +227,7 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 <img width="825" height="419" alt="Снимок экрана 2026-06-28 в 16 51 35" src="https://github.com/user-attachments/assets/548b1119-4454-477c-933a-04cc00982874" />
 
-| Maturity (Days) |     a     |     b    |    rho   |    m     |  sigma   |    RMSE   |
+| Maturity (Days) |   $a$     |    $b$   |  $\rho$  |   $m$    | $\sigma$ |    RMSE   |
 | --------------- | --------- | -------- | -------- | -------- | -------- | --------- |
 | 9               | -0.023    | 0.13     | -0.48    | -0.099   | 0.21     | 0.000090  |
 | 11              | -0.020    | 0.087    | -0.48    | -0.084   | 0.27     | 0.00010   |
