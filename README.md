@@ -247,7 +247,7 @@ Finally, the calibrated models were evaluated by comparing their implied volatil
 |                                     |   MRE      |   MAE   |   RMSE  |
 | ----------------------------------- | ---------- | ------- | ------- |
 | Low volatility regime               | -0.00015   | 0.0023  |    |
-| Moderate volatility regime          | -8.5 \times 10$^{-6}$     | 0.0023   |    |
+| Moderate volatility regime          | -8.5 $\times$ 10$^{-6}$     | 0.0023   |    |
 | High volatility regime              | -0.042     | 0.047   |    |
 
 MAE is:  0.0022987437769462155
