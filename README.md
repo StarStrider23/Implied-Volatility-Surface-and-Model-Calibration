@@ -259,9 +259,13 @@ In terms of fit quality, the full samples calibrations exhibit higher MAE and RM
 
 ### Low Volatility 
 
+Overall, the SVI model provides an excellent fit to the implied volatility surface in the low volatility regime, closely matching both the smiles and the overall surface structure. Nevertheless, the fitted curves are once again smoother than the market data, which can be visible in the shorter maturities where small local variations are not fully captured.
+
 <img width="1323" height="437" alt="Снимок экрана 2026-06-28 в 16 55 29" src="https://github.com/user-attachments/assets/a198eed5-2cf8-4e6b-b380-94c4793cbf7e" />
 
 <img width="825" height="419" alt="Снимок экрана 2026-06-28 в 16 51 35" src="https://github.com/user-attachments/assets/548b1119-4454-477c-933a-04cc00982874" />
+
+The error structure indicates a systematic underestimation of implied volatility across most strikes and maturities, as reflected in mostly positive heatmap values. Despite this bias, the RMSE remains very low which confirms a strong overall calibration quality.
 
 <img width="1215" height="415" alt="Снимок экрана 2026-06-30 в 16 21 39" src="https://github.com/user-attachments/assets/bf755bc5-d233-4809-8cfe-e4545a25f428" />
 
@@ -277,7 +281,7 @@ In terms of fit quality, the full samples calibrations exhibit higher MAE and RM
 | 32              | -0.024    | 0.12     | -0.48    | -0.064   | 0.25     | 0.00022   |
 | 39              | -0.030    | 0.14     | -0.48    | -0.074   | 0.27     | 0.00024   |
 | 53              | -0.00092  | 0.083    | -0.44    | -0.011   | 0.081    | 0.00024   |
-| 67              | 0.0016    | 0.079    | -0.46    | -0.0045  | 0.068    |  0.00024  |
+| 67              | 0.0016    | 0.079    | -0.46    | -0.0045  | 0.068    | 0.00024   |
 | 88              | 0.0023    | 0.089    | -0.42    | -0.00090 | 0.077    | 0.00022   |
 | 116             | 0.0038    | 0.098    | -0.43    | 0.0039   | 0.091    | 0.00027   |
 | 144             | -0.037    | 0.46     | 0.61     | 0.16     | 0.14     | 0.00017   |
@@ -291,9 +295,13 @@ In terms of fit quality, the full samples calibrations exhibit higher MAE and RM
 
 ### Moderate Volatitility 
 
+In the moderate volatility regime, the SVI model continues to deliver a very accurate fit to the implied volatility surface with only minor deviations from the market smiles. As in the low volatility case, the fitted surface is smoother than the observed data which is more visible here, but still is mcuh less pronounced than in stressed market conditions.
+
 <img width="1308" height="441" alt="Снимок экрана 2026-06-28 в 16 54 35" src="https://github.com/user-attachments/assets/5e8b36c9-d094-4425-99a9-9fd869c7fa51" />
 
 <img width="825" height="417" alt="Снимок экрана 2026-06-28 в 16 53 07" src="https://github.com/user-attachments/assets/3e5f33dc-7931-4fba-8b74-f478a55c5154" />
+
+The heatmaps show a reduced (compared to the low volatility regime) but still present tendency to underestimate implied volatility across the surface. Calibration errors remain low and are particularly small for longer maturities where the model seems to be able to replicate the market structure better.
 
 <img width="1222" height="410" alt="Снимок экрана 2026-06-30 в 16 30 17" src="https://github.com/user-attachments/assets/5cd4795d-0c7d-475a-b4d1-59dcd48055c2" />
 
@@ -330,9 +338,13 @@ In terms of fit quality, the full samples calibrations exhibit higher MAE and RM
 
 ### High Volatilty 
 
+The SVI model also performs well in the high volatility regime - it accurately captures the global shape of the implied volatility surface and smiles. However, the discrepancy between model and market becomes more visible due to the presence of jagged and irregular short maturity smiles in the data which are smoothed out by the parametrisation.
+
 <img width="1313" height="431" alt="Снимок экрана 2026-06-28 в 16 56 23" src="https://github.com/user-attachments/assets/8cfb4dee-a90d-48cb-8c26-8a4ae9033373" />
 
 <img width="822" height="420" alt="Снимок экрана 2026-06-28 в 16 52 14" src="https://github.com/user-attachments/assets/262f7e78-b908-4ab2-9e08-a4772274b5fb" />
+
+While the model still underestimates implied volatility on average, the magnitude of this bias is smaller than in the low-volatility regime. Calibration errors remain low overall and slightly larger deviations concentrated in the short maturity region.
 
 <img width="1204" height="413" alt="Снимок экрана 2026-06-30 в 16 22 50" src="https://github.com/user-attachments/assets/891ea873-3cc8-4bc7-bd80-485d224ff792" />
 
@@ -360,6 +372,10 @@ In terms of fit quality, the full samples calibrations exhibit higher MAE and RM
 |      346        | 0.0051   | 0.13   | -0.52  | 0.15    | 0.28     | 0.00066  |
 
 ### Error comparison
+
+SVI performs extremely well across all regimes with consistently very low ARMSE (average RMSE) values which demonstrates a near perfect fit to the implied volatility surface. The model is particularly accurate for the low and moderate volatility regimes. There, both MRE and MAE are closer to zero.
+
+For the high volatility regime, the error increases slightly (as reflected across all error metrics), but still remains low in absolute terms. Overall, the results confirm that SVI provides a highly accurate and stable representation of the implied volatility surface across different market conditions.
 
 |                                     |           MRE          |   MAE   |   ARMSE   |
 | ----------------------------------- | ---------------------- | ------- | --------- |
