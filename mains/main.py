@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("IV_surface_project/saved_data/near_atm_data.csv")
+df = pd.read_csv("near_atm_data.csv")
 
 # IV(ATM) vs IV(Near ATM), skew and skew/IV(ATM) across the years
 
