@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 
-from black_scholes import BlackScholes
-from brent import brent
-from interpolate_rate import interpolate_rate
+from models.black_scholes import BlackScholes
+from functions.brent import brent
+from functions.interpolate_rate import interpolate_rate
 
 # SPY option data (2010-2013)
 
