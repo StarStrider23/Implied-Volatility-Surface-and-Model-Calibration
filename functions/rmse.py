@@ -1,9 +1,9 @@
 import numpy as np
 
-from heston import Heston
-from brent import brent_scalar
+from models.heston import Heston
+from functions.brent import brent_scalar
 
-from svi import svi
+from models.svi import svi
 
 # Heston
 
