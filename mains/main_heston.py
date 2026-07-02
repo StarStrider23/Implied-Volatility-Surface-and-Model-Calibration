@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
-from heston import Heston
-from rmse import rmse_heston
-from brent import brent
+from models.heston import Heston
+from functions.rmse import rmse_heston
+from functions.brent import brent
 
 from scipy.optimize import differential_evolution
 
