@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 from scipy.optimize import minimize
 
-from rmse import rmse_svi
-from svi import svi
+from functions.rmse import rmse_svi
+from models.svi import svi
 
 date1 = '2017-07-24' #low vol
 date2 = '2020-03-13' #high vol
