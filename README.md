@@ -150,6 +150,8 @@ As a final note, it was already mentioned that SVI does not rely on an underlyin
 
 # Structure
 
+The models folder contains the Heston and Black-Scholes classes as well as the SVI parametrisation function. The functionss folder includes a file with two Brent's method functions - one vectorised and one scalar. It also contains the interpolation_rate function which computes risk-free interest rates, and the rmse file which includes the two objective RMSE functions, one for Heston and one for SVI, that are later minimised. Finally, the mains folder contains four working files that tie everything together and execute the workflow.
+
 # Results
 
 ## Near ATM Implied Volatilty Across Years
