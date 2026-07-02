@@ -1,4 +1,4 @@
-from black_scholes import BlackScholes
+from models.black_scholes import BlackScholes
 from scipy.optimize import brentq
 
 def brent(df):
