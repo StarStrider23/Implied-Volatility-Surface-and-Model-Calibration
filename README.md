@@ -176,17 +176,17 @@ Figures below present the implied volatility smiles and the corresponding implie
 
 Figures below present the implied volatility smiles and surface for the selected trading date in 2023 which represents a moderate volatility market regime. Implied volatilities here are lower than those observed during the COVID-19 period but remain above the levels seen in 2017. In particular, most of implied volatilties land in between 0.21 and 0.8. The implied volatility surface and smiles are generally relatively smooth, although they exhibit slightly greater irregularity than in the low volatility regime. A negative volatility skew is still present, however, the skew is less steep than in the 2017 sample, resulting in an intermediate surface shape between the low and high volatility regimes.
 
-<img width="1187" height="740" alt="Снимок экрана 2026-06-27 в 18 05 30" src="https://github.com/user-attachments/assets/d690affb-a57c-4684-8e0a-abbd09599dbb" />
+<img width="1184" height="742" alt="Снимок экрана 2026-06-27 в 18 06 52" src="https://github.com/user-attachments/assets/40f1e696-1006-4f82-8393-51340fe45496" />
 
-<img width="712" height="691" alt="Снимок экрана 2026-07-01 в 14 02 19" src="https://github.com/user-attachments/assets/31e9ef8e-7eef-432d-aa45-7c165819a0ed" />
+<img width="741" height="688" alt="Снимок экрана 2026-07-01 в 14 02 48" src="https://github.com/user-attachments/assets/31ac5e37-ea3f-44fe-88d8-f35e0c3418c8" />
 
 ### High volatility 
 
 Figures below present the implied volatility smiles and surface for the selected trading date during the COVID-19 in 2020. Compared with the low and moderate volatility regimes, implied volatilities here are substantially higher across all maturities ranging approximately from 0.25 to 1.1, resulting in an overall upward shift of the implied volatility surface. Both the surface and the volatility smiles appear jagged and much less smooth, exhibiting more pronounced local peaks and curvature, especially for higher maturities. This demonstrates the heightened market uncertainty during this period. Although the negative skew remains visible, it is less steep compared to those of the low and moderate regimes.
 
-<img width="1184" height="742" alt="Снимок экрана 2026-06-27 в 18 06 52" src="https://github.com/user-attachments/assets/40f1e696-1006-4f82-8393-51340fe45496" />
+<img width="1187" height="740" alt="Снимок экрана 2026-06-27 в 18 05 30" src="https://github.com/user-attachments/assets/d690affb-a57c-4684-8e0a-abbd09599dbb" />
 
-<img width="741" height="688" alt="Снимок экрана 2026-07-01 в 14 02 48" src="https://github.com/user-attachments/assets/31ac5e37-ea3f-44fe-88d8-f35e0c3418c8" />
+<img width="712" height="691" alt="Снимок экрана 2026-07-01 в 14 02 19" src="https://github.com/user-attachments/assets/31e9ef8e-7eef-432d-aa45-7c165819a0ed" />
 
 ## Model Calibration. Heston Model
 
