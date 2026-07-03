@@ -395,7 +395,7 @@ A key observation from the Heston calibration is the sensitivity of certain para
 
 In order to estimate whether any of the $\kappa$ values are reasonable, the so-called mean reversion half-life $t_{1/2}$ can be used. 
 
-$$ t_{1/2} = 252 \frac{ln(2)}{$\kappa$}  $$
+$$ t_{1/2} = 252 \frac{ln(2)}{\kappa}  $$
 
 Mean reversion half-life is simply number of days it takes for the volatility shocks to decay by half. Notice the factor 252, which correpsonds to the average number of market days per year. Dividing the factor out yields the corresponding mean reversion half-life in years. With $\kappa$ being in the range from 15, 30, 50 to 100, the mean reversion half-life varies from roughly 11.6, 5.8, 3.5 to 1.7 days, which isn't too absurd as equity volatility often exhibits fairly rapid mean reversion.
 
