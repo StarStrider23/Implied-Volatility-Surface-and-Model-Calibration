@@ -200,7 +200,8 @@ Figures compare the market and Heston-implied volatility smiles and surfaces for
 
 The error heat map shows that the calibration performs best around the ATM region (around strike = 246,81) and for longer maturities, with larger errors occurring for shorter maturities and away from the ATM region. On average, the model underestimates implied volatility for forward moneyness below 1 and overestimates it for forward moneyness above 1.
 
-<img width="1234" height="438" alt="Снимок экрана 2026-07-01 в 15 31 24" src="https://github.com/user-attachments/assets/7f07657f-eb84-47fb-a9ee-8b724d0df622" />
+<img width="1234" height="438" alt="615789022-7f07657f-eb84-47fb-a9ee-8b724d0df622" src="https://github.com/user-attachments/assets/3c27fa2d-37ae-47ab-b0ca-03bef7306d82" />
+
 
 ### Moderate Volatitility 
 
