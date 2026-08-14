@@ -1,4 +1,4 @@
-# Implied Volatility Surface and Model Calibration
+# Implied Volatility Surface & Model Calibration
 
 Project by Alexsey Chernichenko. June 2026.
 
